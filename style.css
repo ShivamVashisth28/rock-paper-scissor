@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(24, 15, 23);
+}
+
+.card-container{
+    position: block;
+    margin: auto;
+    margin-top: 150px;
+    height: 500px;
+    width: 900px;
+    background-color: rgb(14, 67, 85);
+    border: 10px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 251, 251);
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    background-color: red;
+    height: 80%;
+    
+
+}
+
+.text{
+    height: 30%;
+    font-size: 3rem;
+    padding-top: 20px;
+    text-align: center;
+  
+  
+}
+
+.player .img{
+    background-image: url("stone.jpg");
+    background-size: cover;
+   
+}
+
+.cpu .img{
+    background-image: url("stone.jpg");
+    background-size: cover;
+    
+}
+
+
+
+@keyframes moveImages{
+    
+    33%{
+        background-image: url("stone.jpg");
+    }
+
+    66%{
+        background-image: url("scissor.jpg");
+    }
+
+    99%{
+        background-image: url("paper.jpg");
+    }
+}
+
+.moveImages{
+   
+    animation: moveImages 1s infinite;
+}
+
+
+
+
+
+
+
+.heading{
+    position: absolute;
+    top: 50px;
+    left: 320px;
+    background-color:  rgb(14, 67, 85);
+    color: white;
+    display: flex;
+    border: 5px solid black;
+    justify-content:  space-around;
+    align-items: center;
+    font-size: 4rem;
+    height: 70px;
+    width: 900px;
+}
+
+.userChoice{
+    position: absolute;
+    top: 200px;
+    left: 35px;
+    height: 400px;
+    width: 250px;
+    background-color:  rgb(14, 67, 85);
+    border: solid black 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.choice{
+    background-color: rgb(254, 246, 246);
+    width:200px;
+    height: 60px;
+    font-size: 2.5rem;
+    text-align: center;
+    border: black 3px solid;
+    box-shadow: 3px 3px black;
+    transition: all 0.5s;
+}
+
+.choice:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px black;
+}
+
+.scoreboard{
+    position: absolute;
+    top: 200px;
+    right: 35px;
+    height: 400px;
+    width: 250px;
+    background-color:  rgb(14, 67, 85);
+    border: solid black 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.score{
+    background-color: rgb(254, 246, 246);
+    width:200px;
+    height: 60px;
+    border: black 3px solid;
+    box-shadow: 3px 3px black;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
