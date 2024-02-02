@@ -63,7 +63,7 @@ function setCpuChoice(){
 }
 
 function setScore(){
-    user_winning_cond = (user_choice === 0 && cpu_choice ===2) || (user_choice === 1 && cpu_choice ===0) && (user_choice === 2 && cpu_choice ===1);
+    user_winning_cond = (user_choice === 0 && cpu_choice ===2) || (user_choice === 1 && cpu_choice ===0) || (user_choice === 2 && cpu_choice ===1);
 
     if(user_winning_cond){
         user_score++;
